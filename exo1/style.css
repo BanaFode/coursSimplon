@@ -1,0 +1,12 @@
+.fondRouge{
+    background-color: #ff0000;
+}
+.fondJaune{
+    background-color: #ffff00;
+}
+.fondVert{
+    background-color: #008000;
+}
+body{
+    text-align: center;
+}

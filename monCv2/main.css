@@ -1,0 +1,71 @@
+body{
+    background-color: #fff;
+}
+.container {
+    width: 800px;
+    padding-bottom: 12px;
+    margin: 0 auto;
+    box-shadow: 0 0 23px 4px gray;
+
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    background-color: rgb(32, 56, 100);
+    text-align: center;
+    padding: 4px;
+    color: white;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+img {
+    padding: 6px;
+    width: 150px;
+    height: 200px;
+}
+
+.entete {
+    display: flex;
+    align-items: center;
+}
+
+.profil h1,
+.profil h3 {
+    text-align: center;
+}
+
+.retirePuce {
+    list-style: none;
+}
+
+.coordonnees {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.trait {
+    width: 100px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: red;
+}
+
+/*mobilr*/
+@media screen and (max-width:600px) {
+    .container {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .entete {
+        display: block;
+        text-align: center;
+    }
+
+
+}

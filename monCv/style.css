@@ -1,0 +1,114 @@
+/*DESKTOP ET GENERALE*/
+body {
+    background-color: #fff;
+}
+
+/*ENTETE*/
+.containerPrin {
+    width: 800px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 17px 3px gray;
+}
+
+.entete {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.entete h1 {
+    margin-bottom: 0;
+}
+
+/*FIN*/
+
+/*ligne de formations et experience*/
+.p-ligne2 {
+    width: 100%;
+    height: 3px;
+    border-radius: 12px;
+    background-color: gray;
+}
+
+.p-ligne {
+    margin: 0 auto;
+    width: 90px;
+    border-radius: 12px;
+    height: 3px;
+    background-color: red;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.couleurbleu {
+    color: rgb(32, 56, 100);
+}
+
+.retirer-puce {
+    list-style: none;
+}
+
+.container-corps {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-corps-G {
+    padding: 10px;
+    margin: 9px;
+    background-color: rgb(32, 56, 100);
+    width: 31%;
+    color: white;
+    border-radius: 11px;
+}
+
+.container-corps-D {
+    padding: 10px;
+    width: 60%;
+}
+
+.container-corps-G h3 {
+    padding: 4px;
+    background-color: #fff;
+    border: 2px solid gray;
+    border-radius: 4px;
+}
+
+.container-corps-G a {
+    color: white;
+}
+
+
+
+/*Mobile*/
+@media screen and (max-width:500px) {
+    .containerPrin {
+        width: 100%;
+        margin: 0 auto;
+        box-shadow: none;
+    }
+
+    .entete {
+        flex-wrap: wrap;
+
+    }
+
+    .container-corps-G {
+        width: 100%;
+        padding: 9px;
+        margin: 0px;
+        background-color: rgb(32, 56, 100);
+        color: white;
+        border-radius: 0px;
+    }
+
+    .container-corps-D {
+        width: 100%;
+        padding: 2px;
+    }
+}

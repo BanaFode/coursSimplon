@@ -1,0 +1,90 @@
+body{
+    background: url(5.jpeg);
+    background-repeat: no-repeat;
+    height: 97vh;
+    color: white;
+}
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    background:url(6.jpg);
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid brown;
+}
+header nav{
+    position: absolute;
+    right: 17px;
+}
+header nav  a, .nomE{
+    margin: 4px;
+    font-weight: bolder;
+    color: white;
+}
+.centrerText{
+    text-align: center;
+}
+hr{
+    background-color: brown;
+    height: 2px;
+    border-color: brown;
+    border-radius: 12px;
+    width: 60%;
+}
+form{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 9px 1px rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 8px;
+}
+form input{
+    margin: 6px;
+    width: 95%;
+    display: block;
+    height: 24px;
+    border-radius: 7px;
+}
+form input:hover,form input:focus{
+   border: 2px solid brown;
+   outline: none;
+}
+.btn{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    color: white;
+    font-size: 1.2em;
+    padding-bottom: 25px;
+    border: none;
+    border-radius: 9px;
+    background-color: brown;
+}
+.btn:hover{
+   background-color: white;
+   color: brown;
+}
+p{
+    margin:  0;
+}
+h1{
+    margin-bottom: 0;
+}
+main{
+    margin-top: 15vh;
+}
+.col-brown{
+    font-weight: bolder;
+    color: brown;
+}
+fieldset{
+    border: 2px solid white;
+}
+.present{
+    text-shadow: 3px 2px 2px black, -3px -2px 2px black;
+    font-size: 1.2em;
+    font-style: italic;
+}
