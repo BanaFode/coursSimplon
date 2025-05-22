@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background: white;
+}
+
+.entete {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 120px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #444;
+}
+
+h1 {
+    font-size: 45px;
+    font-family: "crete round", serif;
+}
+
+h1 span,
+h2 span {
+    color: #ff7a00;
+}
+
+.entete nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #444;
+    text-transform: uppercase;
+    margin-right: 9px;
+}
+
+.bannier1 {
+    height: 500px;
+    background: url(images/main.jpg);
+    background-size: 100% 100%;
+}
+
+.bienvenue {
+    width: 700px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.button-1 {
+    display: block;
+    font-size: 23px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0 auto;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background: #ff7a00;
+}
+
+.button-1:hover ,.button-2:hover{
+    background: #02b8dd;
+}
+
+.bienvenue h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 150px 0 40px;
+    font-size: 55px;
+}
+
+.planning {
+    display: flex;
+    margin: 0 auto;
+    column-gap: 12px;
+    width: 80%;
+    padding: 80px;
+    text-align: center;
+}
+
+.planning article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.planning div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.cible {
+    padding: 45px;
+    display: flex;
+    column-gap: 12px;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.126);
+}
+
+.cible article {
+    background: white;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 360px;
+    border-radius: 7px;
+}
+
+.cible article div {
+    text-align: center;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cible article div p {
+    color: gray;
+    font-size: 10px;
+    margin: 10px;
+}
+
+.cible h4 {
+    margin: 10px;
+}
+
+.img-cible {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    height: 190px;
+    width: 210px;
+}
+
+.button-2 {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    background-color: #ff7a00;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.Contact {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 48px;
+}
+
+.Contact h2,
+.pied h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.phr-Contact {
+    font-size: 16px;
+    color: gray;
+    margin: 14px;
+}
+
+.tiretbleu {
+    margin: 14px auto;
+    width: 45%;
+    height: 1px;
+    background-color: rgb(0, 187, 255);
+}
+
+form {
+    margin-top: 43px;
+}
+
+form input {
+    margin: 5px;
+    width: 210px;
+    border-radius: 5px;
+    padding: 8px;
+    outline: none;
+    border-color: gray;
+}
+
+form a {
+    text-decoration: none;
+    padding: 8px;
+
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 187, 255);
+}
+
+.pied {
+    height: 200px;
+    background-color: rgb(48, 40, 40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pied h2 {
+
+    color: #ffffff;
+}
+
+.pied p {
+    margin-top: 32px;
+    color: #7f7d7d;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media screen and (max-width:700Px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .entete nav a {
+        display: flex;
+        padding: 3px;
+
+        margin-right: 0px;
+    }
+
+
+    .bienvenue {
+        width: 94%;
+    }
+
+    .bienvenue h2 {
+        font-size: 40px;
+
+    }
+
+    .planning {
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+        margin-top: 43px;
+
+    }
+
+    .cible {
+        padding: 0px;
+        margin-top: 43px;
+        flex-direction: column;
+        row-gap: 12px;
+
+    }
+
+    .cible article {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 7px;
+    }
+
+    .img-cible {
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 0px;
+        height: auto;
+        width: 100%;
+    }
+
+    form input {
+        margin: 0px;
+        margin-bottom: 19px;
+    }
+
+    .Contact {
+       
+        width: 100%;
+        margin: 22px auto;
+        padding: 0;
+    }
+}
