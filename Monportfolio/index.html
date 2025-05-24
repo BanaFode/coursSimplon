@@ -4,33 +4,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.5.1-web/css/all.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Mon Portfolio</title>
 </head>
 
 <body>
-    <section class="bannier">
-        <header class="entete">
-            <h2>CAMARA</h2>
+    <header class="entete">
+
+        <div class="desktop">
+            <h3>BANA FODE CAMARA</h3>
             <nav>
                 <a href="">Profil</a>
+                <a href="">Mes formations</a>
                 <a href="">Mes projets</a>
                 <a href="">Mes compétences</a>
                 <a href="">A propos</a>
             </nav>
-        </header>
+        </div>
+        <div class="mobile">
+            <label for="clic"> </label>
+            <label for="clic">
+                <input type="checkbox" id="clic">
+                <div class="menu1">
+                    <div class="entete-menu">
+                        <h3>BANA FODE CAMARA</h3>
+                        <i class="fa fa-multiply fa-2x"></i>
+                    </div>
+                    <nav>
+                        <a href="">Profil</a>
+                        <a href="">Mes formations</a>
+                        <a href="">Mes projets</a>
+                        <a href="">Mes compétences</a>
+                        <a href="">A propos</a>
+                    </nav>
+                </div>
+            </label>
+            <label for="clic"></label>
+        </div>
+    </header>
 
-        <div class="profil">
-            <div class="presentation">
-                <h1>BANA <span>FODE </span> CAMARA</h1>
-                <p>Je suis étudiant en Licence 4 MIAGE et Dévéloppeur FrontEnd junior en formation actuellement chez Simplon 
-                    Guinée dans le Cadre du Projets D-CLIC</p>
-                <a href="" class=" btn-1">Télécharger CV</a>
+    <section class="profil">
+        <div class="presentation">
+            <span>Bonjour, je suis</span>
+            <h1>BANA <span>FODE </span> CAMARA</h1>
+            <p>Je suis Dévéloppeur <span>FrontEnd</span> Junoir Passionné par la création d'interfaces web modernes,
+                fluides, intuitives, accessibles et responsives.</p>
+            <div class="reseau">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fa fa-envelope"></i>
+                <i class="fab fa-facebook"></i>
             </div>
-            <div class="bordure">
-                <img src="assets/img/IMG_772.png" alt="" class="maPhoto">
-            </div>
+            <a href="" class=" btn-1">Télécharger CV</a>
 
+        </div>
+        <div class="bordure">
+            <img src="assets/img/IMG_772.png" alt="jjj" class="maPhoto">
+        </div>
+
+    </section>
+
+    <!-- Section a propos de moi -->
+    <section class="AproposMoi">
+        <img src="assets/img/IMG_7972.jpeg" alt="">
+        <div>
+            <h2>A Propos de Moi</h2>
+            <div class="tiret"></div>
+            <p>
+                Etudiant en licence 4 aux Méthodes Informatiques Appliquées à la Gestion des Entreprises. Passionné et
+                motivé par le
+                monde de l’informatique et la gestion, je suis constamment en quête de nouvelles opportunités
+                d’apprentissages, capable
+                de travailler en groupe et à relever de nouveaux défis pour apporter ma contribution à des projets
+                innovants.
+            </p>
+
+            <label for="">Dveloppement FrontEnd</label>
+            <progress value="60" max="100">80</progress>
+            <label for="">Web Design</label>
+            <progress value="40" max="100"></progress>
+
+        </div>
+    </section>
+    <!-- Mes services -->
+    <section class="services">
+        <h2>Mes Services</h2>
+        <div class="tiret"></div>
+        <div class="mesServices">
+            <div>
+                <i class="fa fa-chevron-left fa-3x"></i>
+                <i class="fa fa-chevron-right fa-3x"></i>
+                <h2>DEV FrontEnd</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nobis, debitis enim. Est quo officia sed ab facilis consectetur,
+                    natus maiores neque fugit consequatur quae quod et corrupti? Sunt,
+                    velit delectus?
+                </p>
+                <a href="" class=" btn-1">Contactez-moi</a>
+            </div>
+            <div>
+                <i class="fa fa-chevron-left fa-3x"></i>
+                <i class="fa fa-chevron-right fa-3x"></i>
+                <h2>DEV FrontEnd</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nobis, debitis enim. Est quo officia sed ab facilis consectetur,
+                    natus maiores neque fugit consequatur quae quod et corrupti? Sunt,
+                    velit delectus?
+                </p>
+                <a href="" class=" btn-1">Contactez-moi</a>
+            </div>
+            <div>
+                <i class="fa fa-chevron-left fa-3x"></i>
+                <i class="fa fa-chevron-right fa-3x"></i>
+                <h2>DEV FrontEnd</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nobis, debitis enim. Est quo officia sed ab facilis consectetur,
+                    natus maiores neque fugit consequatur quae quod et corrupti? Sunt,
+                    velit delectus?
+                </p>
+                <a href="" class=" btn-1">Contactez-moi</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- Section mes competences -->
+    <section class="competences">
+        <h2>Mes Compétences</h2>
+        <div class="tiret"></div>
+        <div class="Mescompetences">
+            <div>
+                <label for=""><i class="fab fa-html5 fa-2x"></i> HTML 5</label>
+                <progress value="90" max="100">80</progress>
+                <label for=""><i class="fab fa-css3 fa-2x"></i> CSS 3</label>
+                <progress value="70" max="100"></progress>
+                <label for=""><i class="fab fa-js fa-2x"></i> Javascript</label>
+                <progress value="30" max="100"></progress>
+                <label for=""><i class="fab fa-windev fa-2x"></i> Windev</label>
+                <progress value="50" max="100"></progress>
+            </div>
+            <div>
+                <div>
+                    <i class="fab fa-bootstrap fa-7x"></i>
+                    <i class="fab fa-github fa-7x"></i>
+                </div>
+                <div>
+                    <i class="fab fa-figma fa-7x"></i>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Section mes projets -->
+    <section class="projet">
+        <h2>Mes Projets</h2>
+        <div class="tiret"></div>
+        <div class="mesprojet">
+            <div>
+                <i class="fa fa-chevron-left fa-3x"></i>
+                <i class="fa fa-chevron-right fa-3x"></i>
+                <h2>DEV FrontEnd</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nobis, debitis enim. Est quo officia sed ab facilis consectetur,
+                    natus maiores neque fugit consequatur quae quod et corrupti? Sunt,
+                    velit delectus?
+                </p>
+                <a href="" class=" btn-1">Contactez-moi</a>
+            </div>
+            <div>
+                <i class="fa fa-chevron-left fa-3x"></i>
+                <i class="fa fa-chevron-right fa-3x"></i>
+                <h2>DEV FrontEnd</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nobis, debitis enim. Est quo officia sed ab facilis consectetur,
+                    natus maiores neque fugit consequatur quae quod et corrupti? Sunt,
+                    velit delectus?
+                </p>
+                <a href="" class=" btn-1">Contactez-moi</a>
+            </div>
+            <div>
+                <i class="fa fa-chevron-left fa-3x"></i>
+                <i class="fa fa-chevron-right fa-3x"></i>
+                <h2>DEV FrontEnd</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nobis, debitis enim. Est quo officia sed ab facilis consectetur,
+                    natus maiores neque fugit consequatur quae quod et corrupti? Sunt,
+                    velit delectus?
+                </p>
+                <a href="" class=" btn-1">Contactez-moi</a>
+            </div>
+        </div>
+        <div class="mesprojet">
+            <div>
+                <i class="fa fa-chevron-left fa-3x"></i>
+                <i class="fa fa-chevron-right fa-3x"></i>
+                <h2>DEV FrontEnd</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nobis, debitis enim. Est quo officia sed ab facilis consectetur,
+                    natus maiores neque fugit consequatur quae quod et corrupti? Sunt,
+                    velit delectus?
+                </p>
+                <a href="" class=" btn-1">Contactez-moi</a>
+            </div>
+            <div>
+                <i class="fa fa-chevron-left fa-3x"></i>
+                <i class="fa fa-chevron-right fa-3x"></i>
+                <h2>DEV FrontEnd</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nobis, debitis enim. Est quo officia sed ab facilis consectetur,
+                    natus maiores neque fugit consequatur quae quod et corrupti? Sunt,
+                    velit delectus?
+                </p>
+                <a href="" class=" btn-1">Contactez-moi</a>
+            </div>
+            <div>
+                <i class="fa fa-chevron-left fa-3x"></i>
+                <i class="fa fa-chevron-right fa-3x"></i>
+                <h2>DEV FrontEnd</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nobis, debitis enim. Est quo officia sed ab facilis consectetur,
+                    natus maiores neque fugit consequatur quae quod et corrupti? Sunt,
+                    velit delectus?
+                </p>
+                <a href="" class=" btn-1">Contactez-moi</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- Contacter moi -->
+    <section class="contacter">
+        <div class="Mecontacter">
+            <h2>Contactez-moi</h2>
+            <div class="tiret"></div>
+            <div><i class="fab fa-whatsapp fa-2x"></i><a href=""> +224 627 04 63 78</a></div>
+            <div><i class="fa fa-phone fa-2x"></i><a href=""> +224 627 04 63 78</a></div>
+            <div><i class="fa fa-location fa-2x"></i><a href=""> Coronthie 1, Conakry, Guinée</a></div>
+            <a href="" class=" btn-1">Télécharger CV</a>
+        </div>
+        <div class="message">
+            <form action="">
+                <input type="text" placeholder="Votre Nom">
+                <input type="text" placeholder="Votre Prénom">
+                <input type="email" placeholder="Votre email">
+                <textarea name="" id="" rows="8" placeholder="Votre Message"></textarea><br>
+                <button type="submit" class="btn-1">Envoyer</button>
+            </form>
         </div>
     </section>
 </body>
