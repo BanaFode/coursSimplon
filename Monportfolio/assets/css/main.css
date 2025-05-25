@@ -57,7 +57,9 @@ body {
     height: 455px;
     background-color: rgba(0, 0, 0, 0.388);
     width: 90%;
-    margin: 80px auto;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 15px;
 }
 
@@ -129,7 +131,7 @@ body {
 .AproposMoi {
     width: 67%;
     padding: 6px;
-    margin: 0 auto;
+    margin: 100px auto;
     display: flex;
     align-items: center;
     column-gap: 50px;
@@ -368,8 +370,7 @@ textarea {
         flex-direction: column-reverse;
         border: none;
         padding: 0;
-        margin: 20px auto;
-
+        margin-top: 40%;
     }
 
     .competences,
@@ -391,22 +392,19 @@ textarea {
     }
 
     .maPhoto {
-        margin-top: 110px;
-        width: 245px;
-        height: auto;
+        width: 290px;
+        height: 330px;
         box-shadow: 0 0 100px 1px orangered;
     }
 
     .AproposMoi {
         width: 95%;
-        margin: 20px auto;
         flex-direction: column;
     }
 
     .AproposMoi img {
         width: 280px;
         box-shadow: 0 0 33px 1px orangered;
-        margin-top: 65px;
         margin-bottom: 17px;
     }
 
