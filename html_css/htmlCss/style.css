@@ -1,0 +1,6 @@
+td{
+    padding: 4px;
+}
+tr:nth-child(2){
+    background-color: blueviolet;
+}
