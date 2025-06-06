@@ -1,0 +1,787 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* Entete desktop */
+.entete .desktop {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 4px 3px rgba(128, 128, 128, 0.204);
+}
+
+.entete nav {
+    margin: 5px;
+}
+
+.entete nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+    transition: 1s;
+}
+
+.entete nav a:hover {
+    border-color: brown;
+}
+
+
+.mobile {
+    display: none;
+}
+
+/* banner */
+.banner1 {
+    margin-top: 120px;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.277), rgba(0, 0, 0, 0.277)), url(../img/PHOTO-2023-12-12-07-08-06.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation-name: banner1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in-out;
+}
+
+@keyframes banner1 {
+    20% {
+        background: linear-gradient(rgba(0, 0, 0, 0.277), rgba(0, 0, 0, 0.277)), url(../img/barrrr-768x537.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    40% {
+        background: linear-gradient(rgba(0, 0, 0, 0.277), rgba(0, 0, 0, 0.277)), url(../img/PHOTO-2023-12-13-16-58-03.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    60% {
+        background: linear-gradient(rgba(0, 0, 0, 0.277), rgba(0, 0, 0, 0.277)), url(../img/PHOTO-2023-12-12-07-23-01.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    80% {
+        background: linear-gradient(rgba(0, 0, 0, 0.277), rgba(0, 0, 0, 0.277)), url(../img/PHOTO-2023-12-12-07-08-06.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    100% {
+        background: linear-gradient(rgba(0, 0, 0, 0.277), rgba(0, 0, 0, 0.277)), url(../img/PHOTO-2023-12-12-07-23-01.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.text-banner {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100%;
+    width: 80%;
+    flex-direction: column;
+    padding: 9px;
+}
+
+.voirplus {
+    border: none;
+    background: #173459;
+    border-radius: 8px;
+    padding: 14px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: block;
+    width: 100px;
+    font-weight: bolder;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 34px;
+
+}
+
+.telecharger {
+    background: #173459;
+    border-radius: 8px;
+    padding: 7px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: block;
+    width: 100px;
+    margin: 12px auto;
+
+}
+
+h1 {
+    width: 70%;
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.text-banner p {
+    padding: 8px;
+    width: 40%;
+    margin: 2px;
+    background: #00000052;
+    color: white;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* directeur */
+
+.directeur {
+    padding: 30px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 19px;
+
+}
+
+.mot-du-directeur {
+    margin-top: 32px;
+}
+
+.directeur>img {
+    border: 1px solid #173459;
+    height: 250px;
+    width: 490px;
+    border-radius: 50%;
+}
+
+.mot-du-directeur>div h4,
+.mot-du-directeur>div h3,
+.mot-du-directeur>div p {
+    margin: 0;
+}
+
+.mot-du-directeur>div {
+    text-align: center;
+}
+
+/* Chantier */
+.banner2 {
+    background: linear-gradient(#173459a0, #173459a0), url(../img/PHOTO-2023-12-13-16-58-03.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.nos-administrateur {
+    padding: 4px;
+}
+
+.banner2,
+.administrateur {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 12px;
+}
+
+.banner2 {
+    padding: 40px;
+}
+
+.administrateur article img {
+    border-radius: 50%;
+    box-shadow: 0 0 4px 3px rgba(128, 128, 128, 0.204);
+    border: 2px solid transparent;
+    transition: 1s;
+}
+
+.administrateur {
+    margin: 55px;
+    text-align: center;
+}
+
+.banner2 article {
+    background-color: white;
+    text-align: center;
+    padding: 23px;
+    box-shadow: 0 0 4px 3px rgba(128, 128, 128, 0.204);
+    border: 2px solid transparent;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+.banner2 article:hover,
+.actualite>div:hover,
+.administrateur>div article img:hover,.nos-services div:hover,
+.realisation div:hover {
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+}
+
+i {
+    color: #173459;
+}
+
+
+h2 {
+    text-align: center;
+    padding: 15px;
+    font-size: 2.1em;
+    color: #173459;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.tiret,
+.tiret2 {
+    height: 5px;
+    width: 10px;
+    width: 12%;
+    border-radius: 12px;
+}
+
+.tiret2 {
+    background-color: rgb(255, 255, 255);
+    margin-left: 3%;
+}
+
+.tiret {
+    margin: 0 auto;
+    background-color: #173459;
+}
+
+
+/* actualite */
+.actualite {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 2 colonnes égales */
+    grid-template-rows: auto auto;
+    /* 2 lignes */
+    gap: 10px;
+    width: 80%;
+    margin: 12px auto;
+
+
+}
+
+.actualite>div {
+    border-radius: 12px;
+    box-shadow: 0 0 4px 3px rgba(128, 128, 128, 0.204);
+    text-align: center;
+    padding: 15px;
+    border: 2px solid transparent;
+    transition: 1s;
+}
+
+
+.nos-services,
+.chiffre,
+.nos-projets {
+    display: flex;
+    gap: 8px;
+    width: 90%;
+    margin: 22px auto;
+}
+
+.nos-services,
+.chiffre {
+    text-align: center;
+}
+
+.chiffre div {
+    margin: 16px;
+    background-color: #173459;
+    width: 25%;
+    border-radius: 10px;
+}
+
+.chiffre div h3 {
+    font-weight: bolder;
+    margin: 0;
+    font-size: 4.5em;
+    color: white;
+    border-bottom: 2px solid;
+}
+
+.chiffre div p {
+    color: white;
+    font-size: 1.2em;
+}
+
+.nos-services div {
+    padding: 21px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 1s;
+    box-shadow: 0 0 4px 3px rgba(128, 128, 128, 0.204);
+}
+
+.nos-services p {
+    text-align: start;
+}
+
+.realisation {
+    display: flex;
+    padding: 21px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 17px;
+    gap: 12px;
+}
+
+.realisation div {
+    padding: 19px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    transition: 1s;
+    box-shadow: 0 0 4px 3px rgba(128, 128, 128, 0.204);
+
+}
+
+.realisation div p {
+    text-align: start;
+    margin: 11px auto;
+}
+
+
+
+.presentation {
+    margin-top: 122px;
+}
+
+.presentation>:nth-child(2) {
+    width: 70%;
+    margin: 12px auto;
+    line-height: 30px;
+}
+
+.banner3 {
+    height: 20vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.797), rgba(0, 0, 0, 0.797)), url(../img/PHOTO-2023-12-12-07-08-06.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+
+.banner3 h2 {
+    text-align: start;
+    color: white;
+    font-size: 3.6em;
+}
+
+.Suivez-nous {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.Suivez-nous h3 {
+    margin: 4px;
+}
+
+.contacter-nous {
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 4px 3px rgba(128, 128, 128, 0.204);
+    width: 30%;
+    margin-top: 130px;
+    padding-bottom: 1px;
+
+}
+
+.contacter-nous h3 {
+    padding: 9px;
+    text-align: center;
+    color: #173459;
+    font-size: 1.6em;
+}
+
+.contacter-nous form input {
+    height: 37px;
+}
+
+.contacter-nous form input,
+textarea {
+    display: block;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.289);
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.099);
+    padding: 3px;
+}
+
+.contacter-nous form input:focus,
+textarea:hover {
+    background-color: white;
+}
+
+.pied-page {
+    background-color: gainsboro;
+    padding-top: 31px;
+}
+
+.pied-page>div {
+    display: flex;
+    gap: 31px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pied-page>div p {
+    width: 40%;
+}
+
+.pied-page>div nav a {
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+    margin-bottom: 13px;
+}
+
+.pied-page img {
+    width: 300px;
+}
+
+.autheur {
+    text-align: center;
+    padding: 9px;
+    margin: 0;
+    background-color: #173459;
+    color: white;
+}
+
+/* projets */
+.projets {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.projets h3 {
+    font-size: 2em;
+    color: #173459;
+}
+
+.projets p {
+    display: flex;
+    align-items: center;
+    border-left: 4px solid #173459;
+    padding: 11px;
+    line-height: 27px;
+}
+
+.produit {
+    margin: 43px auto;
+    width: 80%;
+
+}
+
+.document {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.document>div {
+    padding: 7px;
+    text-align: center;
+}
+
+.livre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: 0 0 4px 3px rgba(128, 128, 128, 0.204);
+}
+
+.livre p {
+    font-size: 0.8em;
+}
+
+.livre p,
+.livre h4 {
+    padding: 5px;
+    margin: 0;
+}
+
+iframe {
+    border: 2px solid gray;
+    border-radius: 12px;
+    width: 90%;
+}
+
+
+@media screen and (max-width:900px) {
+
+    /*entete Mobile*/
+    .entete .desktop,
+    .mobile {
+        display: none;
+    }
+
+    .mobile {
+        background-color: white;
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 12px;
+        box-shadow: 0 0 4px 3px rgba(128, 128, 128, 0.204);
+    }
+
+    .mobile label>input {
+        opacity: 0;
+    }
+
+    .mobile label {
+        display: block;
+        width: 40px;
+        height: 4px;
+        margin-bottom: 5px;
+        background-color: black;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.797);
+    }
+
+    .mobile input:checked~.menu1,
+    .livre i {
+        display: block;
+    }
+
+    .menu1 {
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.797);
+        padding: 15px;
+        z-index: 99;
+        width: 100%;
+        top: 0;
+        left: 0;
+        color: white;
+    }
+
+    .menu1 nav a {
+        display: block;
+        font-weight: bolder;
+        color: white;
+    }
+
+    .menu1 nav {
+        width: 35%;
+    }
+
+    .menu1 .entete-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .entete-menu,
+    .entete-menu h3 {
+        margin-top: 0;
+    }
+
+    .menu1 .entete-menu i {
+        margin-right: 56px;
+    }
+
+    .banner1 {
+        margin-top: 50px;
+    }
+
+    /* accueil */
+    .directeur,
+    .nos-services,
+    .realisation {
+        flex-wrap: wrap;
+    }
+
+    .text-banner p {
+        width: 80%;
+    }
+
+    .nos-projets {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .projets h3 {
+        font-size: 1.4em;
+    }
+
+    .projets p {
+        border: none;
+        padding: 2px;
+
+    }
+
+    .directeur>img {
+        height: 250px;
+        width: 400px;
+    }
+
+    .nos-administrateur {
+        padding: 12px 0;
+    }
+
+    .banner2,
+    .administrateur {
+        flex-wrap: wrap;
+        row-gap: 20px;
+        padding: 20px;
+    }
+
+    .administrateur {
+        margin: 0;
+    }
+
+    .banner2 article,
+    .nos-services {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 2.3em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .directeur {
+        padding: 3px;
+        width: 90%;
+    }
+
+    .actualite {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    .chiffre {
+        flex-direction: column;
+    }
+
+    .chiffre div {
+        width: 90%;
+    }
+
+    .realisation {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .realisation div {
+        padding: 9px;
+        text-align: center;
+        width: 95%;
+    }
+
+    /* page a propos */
+    .presentation {
+        margin-top: 22px;
+
+    }
+
+    .presentation>:nth-child(2) {
+        width: 92%;
+    }
+
+    .banner3 {
+        display: flex;
+        align-items: center;
+    }
+
+    .banner3 h2 {
+        font-size: 2.5em;
+    }
+
+    .contacter-nous {
+        width: 90%;
+        margin-top: 100px;
+        padding: 0px;
+        box-shadow: none;
+    }
+
+    .contacter-nous h3 {
+        margin: 0;
+        font-size: 1.7em;
+    }
+
+    .contacter-nous form input,
+    textarea {
+        width: 100%;
+    }
+
+    /* pied de page */
+    .pied-page>div {
+        flex-direction: column;
+        align-items: start;
+        gap: 11px;
+    }
+
+    .pied-page>div p {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .pied-page>div nav {
+        margin-left: 23px;
+        width: 90%;
+    }
+
+    .produit {
+        width: 100%;
+    }
+
+    .document {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .document>div {
+        padding: 7px;
+        width: 100%;
+    }
+
+    .livre {
+        width: 100%;
+        padding: 5px;
+        height: auto;
+
+    }
+
+    .pied-page img {
+        width: 100%;
+    }
+}
