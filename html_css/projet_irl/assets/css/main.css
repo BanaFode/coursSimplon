@@ -1,7 +1,7 @@
 body {
     background-color: white;
-    font-family: sans-serif;
     margin: 0;
+    color: #173459;
 }
 
 /* Entete desktop */
@@ -20,20 +20,21 @@ body {
     box-shadow: 0 0 4px 3px rgba(128, 128, 128, 0.204);
 }
 
-.entete nav {
+nav {
     margin: 5px;
 }
 
-.entete nav a {
+nav a {
+    font-family: sans-serif;
     margin: 10px;
     text-decoration: none;
-    color: black;
+    color:#173459;
     font-weight: 600;
     border-bottom: 3px solid transparent;
     transition: 1s;
 }
 
-.entete nav a:hover {
+nav a:hover {
     border-color: brown;
 }
 
@@ -46,7 +47,7 @@ body {
 .banner1 {
     margin-top: 120px;
     height: 90vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.277), rgba(0, 0, 0, 0.277)), url(../img/PHOTO-2023-12-12-07-08-06.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.432)), url(../img/PHOTO-2023-12-12-07-08-06.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     animation-name: banner1;
@@ -57,31 +58,31 @@ body {
 
 @keyframes banner1 {
     20% {
-        background: linear-gradient(rgba(0, 0, 0, 0.277), rgba(0, 0, 0, 0.277)), url(../img/barrrr-768x537.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.432)), url(../img/barrrr-768x537.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
 
     40% {
-        background: linear-gradient(rgba(0, 0, 0, 0.277), rgba(0, 0, 0, 0.277)), url(../img/PHOTO-2023-12-13-16-58-03.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.432)), url(../img/PHOTO-2023-12-13-16-58-03.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
 
     60% {
-        background: linear-gradient(rgba(0, 0, 0, 0.277), rgba(0, 0, 0, 0.277)), url(../img/PHOTO-2023-12-12-07-23-01.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.432)), url(../img/PHOTO-2023-12-12-07-23-01.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
 
     80% {
-        background: linear-gradient(rgba(0, 0, 0, 0.277), rgba(0, 0, 0, 0.277)), url(../img/PHOTO-2023-12-12-07-08-06.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.432)), url(../img/PHOTO-2023-12-12-07-08-06.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
 
     100% {
-        background: linear-gradient(rgba(0, 0, 0, 0.277), rgba(0, 0, 0, 0.277)), url(../img/PHOTO-2023-12-12-07-23-01.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.432)), url(../img/PHOTO-2023-12-12-07-23-01.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
@@ -226,19 +227,20 @@ h1 {
     transition: 1s;
     border-radius: 5px;
 }
-
+i {
+    color: #173459;
+}
 .banner2 article:hover,
 .actualite>div:hover,
-.administrateur>div article img:hover,.nos-services div:hover,
-.realisation div:hover {
+.administrateur>div article img:hover,
+.nos-services div:hover,
+.realisation div:hover{
     cursor: pointer;
     background-color: brown;
     color: white;
 }
 
-i {
-    color: #173459;
-}
+
 
 
 h2 {
@@ -265,7 +267,7 @@ h2 {
 
 .tiret {
     margin: 0 auto;
-    background-color: #173459;
+    background-color: brown;
 }
 
 
@@ -286,12 +288,13 @@ h2 {
 .actualite>div {
     border-radius: 12px;
     box-shadow: 0 0 4px 3px rgba(128, 128, 128, 0.204);
-    text-align: center;
-    padding: 15px;
+   padding: 0 15px;
     border: 2px solid transparent;
     transition: 1s;
 }
-
+.actualite>div h3{
+    text-align: center;
+}
 
 .nos-services,
 .chiffre,
@@ -441,6 +444,7 @@ textarea {
 .contacter-nous form input:focus,
 textarea:hover {
     background-color: white;
+    border-color: brown;
 }
 
 .pied-page {
@@ -456,14 +460,12 @@ textarea:hover {
 }
 
 .pied-page>div p {
-    width: 40%;
+    width: 29%;
 }
 
 .pied-page>div nav a {
-    text-decoration: none;
-    font-size: 1em;
-    display: block;
-    margin-bottom: 13px;
+    display: flex;
+    align-items: center;
 }
 
 .pied-page img {
