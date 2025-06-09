@@ -28,7 +28,7 @@ nav a {
     font-family: sans-serif;
     margin: 10px;
     text-decoration: none;
-    color:#173459;
+    color: #173459;
     font-weight: 600;
     border-bottom: 3px solid transparent;
     transition: 1s;
@@ -227,14 +227,16 @@ h1 {
     transition: 1s;
     border-radius: 5px;
 }
+
 i {
     color: #173459;
 }
+
 .banner2 article:hover,
 .actualite>div:hover,
 .administrateur>div article img:hover,
 .nos-services div:hover,
-.realisation div:hover{
+.realisation div:hover {
     cursor: pointer;
     background-color: brown;
     color: white;
@@ -288,11 +290,12 @@ h2 {
 .actualite>div {
     border-radius: 12px;
     box-shadow: 0 0 4px 3px rgba(128, 128, 128, 0.204);
-   padding: 0 15px;
+    padding: 0 15px;
     border: 2px solid transparent;
     transition: 1s;
 }
-.actualite>div h3{
+
+.actualite>div h3 {
     text-align: center;
 }
 
@@ -685,6 +688,7 @@ iframe {
         width: 90%;
     }
 
+
     .actualite {
         grid-template-columns: 1fr;
         width: 95%;
@@ -721,7 +725,7 @@ iframe {
 
     .banner3 {
         display: flex;
-        align-items: center;
+        flex-direction: column;
     }
 
     .banner3 h2 {

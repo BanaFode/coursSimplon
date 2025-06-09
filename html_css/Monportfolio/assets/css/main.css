@@ -38,10 +38,10 @@ body {
 }
 
 .entete nav a:last-child {
-    border-style: solid;
-    border-color: orangered;
-    padding: 10px;
-    border-radius: 12px;
+    padding: 7px;
+    border-radius: 12px; 
+    background-color: orangered;
+    border: none;
 }
 
 .mobile {
@@ -93,12 +93,13 @@ body {
     text-align: center;
     color: white;
     border-radius: 5px;
+    transition: 0.5s;
     text-decoration: none;
     background-color: orangered;
     box-shadow: 0 0 23px 1px orangered;
 }
 
-.btn-1:hover {
+.btn-1:hover,.entete nav a:last-child:hover {
     background: #fff;
     color: orangered;
 }
@@ -144,7 +145,7 @@ body {
     box-shadow: 0 0 43px 1px orangered;
 }
 
-h2 {
+.page-acueil h2 {
     font-size: 43px;
     margin: 1px;
     text-align: center;
@@ -159,10 +160,7 @@ progress {
     height: 5px;
 }
 
-.Mescompetences label {
-    display: block;
-    margin-bottom: 12px;
-}
+
 
 progress::-webkit-progress-value {
     background: #ffffff;
@@ -214,7 +212,7 @@ progress::-webkit-progress-value {
     margin-top: 30px;
 }
 
-.Mescompetences div:nth-child(1) {
+.Mescompetences>div:nth-child(1) {
     padding: 11px;
     width: 50%;
 }
@@ -224,6 +222,13 @@ progress::-webkit-progress-value {
     column-gap: 12px;
     display: flex;
     color: orangered;
+}
+
+.Mescompetencespourcen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
 .tiret {
@@ -286,10 +291,72 @@ textarea {
     text-decoration: none;
     color: white;
 }
+.Mecontacter>div {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
 
 .Mecontacter div:nth-child(n+2):nth-child(-n+6) {
     margin-top: 12px;
     font-size: 13px;
+}
+
+footer {
+    margin: 0 auto;
+    width: 30%;
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+footer p {
+    padding: 4px;
+    text-align: center;
+}
+
+/* PAGE  FORMATION */
+.formation {
+    margin: 92px auto;
+    width: 60%;
+}
+
+.mesformations {
+    margin-left: 92px;
+    border-left: 4px solid orangered;
+    margin-top: 19px;
+}
+
+.formation div>div {
+    display: flex;
+    column-gap: 43px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.formation>h2 {
+    text-transform: uppercase;
+    font-size: 3.5em;
+    margin: 0;
+    text-align: center;
+}
+
+.formation div>div ul {
+    list-style: none;
+}
+
+.formation div>div img {
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 0 13px 1px orangered;
+}
+
+.formation>div ul li {
+    margin-bottom: 8px;
+}
+
+.formation div>div ul li:first-child {
+    font-size: 2em;
+    font-weight: bolder;
 }
 
 @media screen and (max-width:800px) {
@@ -366,6 +433,19 @@ textarea {
         margin-right: 56px;
     }
 
+    .entete nav a:last-child {
+        background-color: transparent;
+        border-style: none;
+        border-bottom: 3px solid transparent;
+        border-radius: 0;
+    }
+
+    .entete nav a:last-child:hover {
+        background-color: transparent;
+        border-color: orangered;
+        color: white;
+    }
+
     /* ENTETE ET BANNIER */
     .profil {
         flex-direction: column-reverse;
@@ -377,7 +457,8 @@ textarea {
     .competences,
     .services,
     .projet,
-    .contacter {
+    .contacter,
+    footer {
         width: 90%;
         padding: 5px;
     }
@@ -409,7 +490,7 @@ textarea {
         margin-bottom: 17px;
     }
 
-    h2 {
+    .page-acueil h2 {
         font-size: 33px;
     }
 
@@ -450,7 +531,33 @@ textarea {
         flex-direction: column;
     }
 
-    .Mecontacter {
-        width: 100%;
+    footer p {
+        margin: 0;
+    }
+
+    /* formation */
+    .formation {
+        width: 90%;
+
+    }
+
+    .formation div>div {
+        flex-direction: column-reverse;
+    }
+
+    .mesformations {
+        margin-left: 2px;
+    }
+
+    .formation div>div img {
+        width: 90%;
+    }
+
+    .formation>h2 {
+        font-size: 2.2em;
+    }
+
+    .formation div>div ul {
+        padding-left: 0;
     }
 }

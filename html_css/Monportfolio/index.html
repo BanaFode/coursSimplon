@@ -9,16 +9,14 @@
     <title>Mon Portfolio</title>
 </head>
 
-<body>
+<body class="page-acueil">
     <header class="entete">
 
         <div class="desktop">
             <h3>BANA FODE CAMARA</h3>
             <nav>
                 <a href="">Profil</a>
-                <a href="">Mes formations</a>
-                <a href="">Mes projets</a>
-                <a href="">Mes compétences</a>
+                <a href="formations.html">Mes formations</a>
                 <a href="">A propos</a>
             </nav>
         </div>
@@ -33,9 +31,7 @@
                     </div>
                     <nav>
                         <a href="">Profil</a>
-                        <a href="">Mes formations</a>
-                        <a href="">Mes projets</a>
-                        <a href="">Mes compétences</a>
+                        <a href="formations.html">Mes formations</a>
                         <a href="">A propos</a>
                     </nav>
                 </div>
@@ -79,11 +75,17 @@
                 de travailler en groupe et à relever de nouveaux défis pour apporter ma contribution à des projets
                 innovants.
             </p>
-
-            <label for="">Developpement FrontEnd</label>
+            <div class="Mescompetencespourcen">
+                <div>Developpement FrontEnd</div>
+                <div>60%</div>
+            </div>
             <progress value="60" max="100">80</progress>
-            <label for="">Web Design</label>
-            <progress value="40" max="100"></progress>
+
+            <div class="Mescompetencespourcen">
+                <div>Web Design</div>
+                <div>50%</div>
+            </div>
+            <progress value="50" max="100"></progress>
 
         </div>
     </section>
@@ -137,13 +139,34 @@
         <div class="tiret"></div>
         <div class="Mescompetences">
             <div>
-                <label for=""><i class="fab fa-html5 fa-2x"></i> HTML 5</label>
-                <progress value="90" max="100">80</progress>
-                <label for=""><i class="fab fa-css3 fa-2x"></i> CSS 3</label>
+                <div class="Mescompetencespourcen">
+                    <div> <i class="fab fa-html5 fa-2x"></i> HTML 5</div>
+                    <div>90%</div>
+                </div>
+                <progress value="90" max="100"></progress>
+
+                <div class="Mescompetencespourcen">
+                    <div><i class="fab fa-css3 fa-2x"></i> CSS 3</div>
+                    <div>70%</div>
+                </div>
                 <progress value="70" max="100"></progress>
-                <label for=""><i class="fab fa-js fa-2x"></i> Javascript</label>
+
+                <div class="Mescompetencespourcen">
+                    <div><i class="fab fa-js fa-2x"></i> Javascript</div>
+                    <div>30%</div>
+                </div>
                 <progress value="30" max="100"></progress>
-                <label for=""><i class="fab fa-windev fa-2x"></i> Windev</label>
+
+                <div class="Mescompetencespourcen">
+                    <div>Tailwind Css</div>
+                    <div>35%</div>
+                </div>
+                <progress value="35" max="100"></progress>
+
+                <div class="Mescompetencespourcen">
+                    <div><i class="fab fa-windev fa-2x"></i>Windev</div>
+                    <div>50%</div>
+                </div>
                 <progress value="50" max="100"></progress>
             </div>
             <div>
@@ -153,6 +176,7 @@
                 </div>
                 <div>
                     <i class="fab fa-figma fa-7x"></i>
+
                 </div>
             </div>
         </div>
@@ -260,6 +284,9 @@
             </form>
         </div>
     </section>
+    <footer>
+        <p>Copyright &copy; tous droit reservé Bana Fodé </p>
+    </footer>
 </body>
 
 </html>
