@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 body {
     background-color: white;
     margin: 0;
     color: #173459;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Entete desktop */
@@ -167,7 +169,7 @@ h1 {
 .directeur>img {
     border: 1px solid #173459;
     height: 250px;
-    width: 490px;
+    width:100%;
     border-radius: 50%;
 }
 
@@ -651,8 +653,8 @@ iframe {
     }
 
     .directeur>img {
-        height: 250px;
-        width: 400px;
+        height:auto;
+        width: 300px;
     }
 
     .nos-administrateur {
